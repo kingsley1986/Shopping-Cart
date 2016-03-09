@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/cart/clear' => 'cart#clearCart'
   get '/cart/:id' => 'cart#add'
 
+  resources :subscriptions
   resources :products
   root 'page#home'
   

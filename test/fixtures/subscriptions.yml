@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  credict_card_number: 1
+  security_code: 1
+  card_expire: 2016-03-09
+
+two:
+  email: MyString
+  credict_card_number: 1
+  security_code: 1
+  card_expire: 2016-03-09
