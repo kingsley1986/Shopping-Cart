@@ -11,14 +11,13 @@
 <% @cart.each do |id, quantity| %>
   <% product = Product.find_by_id(id) %>
 
-<li>
-  <%= link_to product.title, product %> 
- <p> <%= product.description %> </p>
- <p> <%= number_to_currency(product.price, :unit => 'ZAR') %></p>
- <p>Quantity: <%= quantity %></p>
-</li>
-<% total += quantity * product.price %>
-
+  <li>
+    <%= link_to product.title, product %> 
+    <p> <%= product.description %> </p>
+    <p> <%= number_to_currency(product.price, :unit => 'ZAR') %></p>
+    <p>Quantity: <%= quantity %></p>
+  </li>
+  <% total += quantity * product.price %>
 <% end %>
 <p><b><%= number_to_currency(total, :unit => "ZAR") %></b></p>
 </ul>
