@@ -1,0 +1,36 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+td a:link, a:visited {
+    background-color: lightblue;
+  padding: 14px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:hover, a:active {
+  background-color: red;
+
+}
+
+tbody {
+  color: red;
+  position: relative;
+  text-indent-left: 12px;
+  font-weight: bold;
+  font-size: 100%;
+}
+
+thead tr {
+  color: blue;
+  font-weight: bold;
+  font-size: 120%;
+  text-indent-left: 120px;
+
+}
+
+

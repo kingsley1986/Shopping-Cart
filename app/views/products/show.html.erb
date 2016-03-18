@@ -6,17 +6,13 @@
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @product.description %>
+  <strong>Price:</strong>
+  <%= @product.price %>
 </p>
+
 
 <p>
   <%= image_tag @product.image.url(:medium) %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
 </p>
 
 <p>
@@ -27,6 +23,11 @@
 <p>
   <strong>Subcategory:</strong>
   <%= @product.subcategory %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
