@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160319001346) do
+ActiveRecord::Schema.define(version: 20160319044750) do
 
   create_table "products", force: :cascade do |t|
     t.string   "title"
@@ -26,15 +26,6 @@ ActiveRecord::Schema.define(version: 20160319001346) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-  end
-
-  create_table "subscriptions", force: :cascade do |t|
-    t.string   "email"
-    t.integer  "credict_card_number"
-    t.integer  "security_code"
-    t.date     "card_expire"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -57,6 +48,8 @@ ActiveRecord::Schema.define(version: 20160319001346) do
     t.string   "second_name"
     t.string   "cell_phone"
     t.boolean  "admin",                  default: false
+    t.boolean  "subscribed"
+    t.string   "stripeid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
