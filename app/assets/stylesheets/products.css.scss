@@ -11,6 +11,8 @@ td a:link, a:visited {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
+   /*position: relative;
+    left: 400px;*/
 }
 a:hover, a:active {
   background-color: red;
@@ -20,17 +22,24 @@ a:hover, a:active {
 tbody {
   color: red;
   position: relative;
-  text-indent-left: 12px;
+  text-indent-left: 1px;
   font-weight: bold;
   font-size: 100%;
 }
 
-thead tr {
-  color: blue;
-  font-weight: bold;
-  font-size: 120%;
-  text-indent-left: 120px;
 
+ td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
+th {
+  color: green;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h1 {
+  
+}
 
