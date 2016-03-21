@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   get 'page/faqs'
 
   get 'page/contact'
+
+  get 'search' => 'store#search', as: 'search'
+  get 'search_results' => 'store#search_results', as: 'search_results'
 end
